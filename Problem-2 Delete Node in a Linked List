@@ -17,15 +17,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class ListNode{
-	int data;
-	ListNode* next;
+class ListNode
+{
+    int data;
+    ListNode* next;
 	
-	ListNode(int data)
-	{
-		this->data = data;
-		next = nullptr;
-	}
+    ListNode(int data)
+    {
+	this->data = data;
+        next = nullptr;
+    }
 };
 
 
@@ -36,7 +37,7 @@ void deleteNode(ListNode* node)
         return;
            
     ListNode* temp = node->next;
-    node->val = node->next->val;
+    node->data = node->next->data;
     node->next = node->next->next;
     delete temp;
         
