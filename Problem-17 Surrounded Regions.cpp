@@ -21,7 +21,7 @@
    X O X X
    
    Explanation:
-   Surrounded regions shouldn’t be on the border, which means that any 'O' on the border of the board are not flipped to 'X'.
+   Surrounded regions shouldnâ€™t be on the border, which means that any 'O' on the border of the board are not flipped to 'X'.
    Any 'O' that is not on the border and it is not connected to an 'O' on the border will be flipped to 'X'. 
    Two cells are connected if they are adjacent cells connected horizontally or vertically. */
    
@@ -34,7 +34,7 @@ void solve(vector<vector<char>>& board)
     if (board.empty()) 
 	    return;
     
-	int row = board.size(), col = board[0].size();
+    int row = board.size(), col = board[0].size();
     for (int i = 0; i < row; ++i) 
 	{
         check(board, i, 0);             // first column
