@@ -36,13 +36,13 @@ void solve(vector<vector<char>>& board)
     
     int row = board.size(), col = board[0].size();
     for (int i = 0; i < row; ++i) 
-	{
+    {
         check(board, i, 0);             // first column
         check(board, i, col - 1);       // last column
     }
     
     for (int j = 1; j < col - 1; ++j) 
-	{
+    {
         check(board, 0, j);             // first row
         check(board, row - 1, j);       // last row
     }
