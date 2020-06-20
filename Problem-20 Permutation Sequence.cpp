@@ -25,7 +25,6 @@
  
 string getPermutation(int n, int k) 
 {
-    vector<string> vec;
     string ans = "";
         
     for(int i=1; i<=n; i++)
@@ -34,5 +33,5 @@ string getPermutation(int n, int k)
     while(--k > 0)
         next_permutation(ans.begin(),ans.end());
     
-	return ans;
+    return ans;
 }
